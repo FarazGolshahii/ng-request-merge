@@ -1,0 +1,17 @@
+{
+  "name": "request-handler-lib",
+  "version": "0.0.2",
+  "peerDependencies": {
+    "@angular/common": "^14.2.0",
+    "@angular/core": "^14.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FarazGolshahii/ng-request-merge.git"
+  },
+  "keywords": ["Merge request","Manage request","Angular","remove duplice request" ],
+  "homepage": "https://github.com/FarazGolshahii/ng-request-merge.git",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
