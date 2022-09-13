@@ -3,5 +3,39 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "request-handler-lib": {
+      "projectType": "library",
+      "root": "projects/request-handler-lib",
+      "sourceRoot": "projects/request-handler-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/request-handler-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/request-handler-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/request-handler-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/request-handler-lib/src/test.ts",
+            "tsConfig": "projects/request-handler-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/request-handler-lib/karma.conf.js"
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "34e0efb5-1b88-4387-a4fa-9039921ea8f5"
   }
 }

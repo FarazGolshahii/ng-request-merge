@@ -16,6 +16,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "paths": {
+      "request-handler-lib": [
+        "dist/request-handler-lib"
+      ]
+    },
     "target": "es2020",
     "module": "es2020",
     "lib": [
