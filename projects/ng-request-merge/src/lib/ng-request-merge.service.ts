@@ -9,7 +9,7 @@ import {RequestTypeEnum} from "./request-manager/request-manager.enum";
 @Injectable({
   providedIn: 'root'
 })
-export class RequestHandlerLibService {
+export class NgRequestMerge {
 
   public requestHeader = new HttpHeaders({});
 
